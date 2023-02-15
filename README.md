@@ -1,2 +1,2 @@
 # ProjetoSegConciente
- Projeto Segurança Conciente com jogo para concientização e ameaças
+ Projeto Segurança Conciente com perguntas para concientização e ameaças
