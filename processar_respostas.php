@@ -1,48 +1,32 @@
-<?php
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resultados do Quiz de Segurança da Informação</title>
+  </head>
+  <body>
+    <h1>Resultados do Quiz de Segurança da Informação</h1>
+    <?php
+    $pontuacao = 0;
+    $respostas_corretas = array(
+      "phishing" => "b",
+      "malware" => "b",
+      "engenharia_social" => "b",
+      "senha_fraca" => "b",
+      "software_desatualizado" => "b",
+      "dispositivos_moveis_nao_protegidos" => "a"
+    );
+    foreach ($respostas_corretas as $ameaca => $resposta_correta) {
+      if (isset($_POST[$ameaca]) && $_POST[$ameaca] == $resposta_correta) {
+        $pontuacao++;
+        echo "<p>Resposta correta para $ameaca</p>";
+      } else {
+        echo "<p>Resposta incorreta para $ameaca</p>";
+      }
+    }
+    echo "<p>Sua pontuação final é $pontuacao</p>";
+    ?>
+  </body>
+</html>
 
-// Definir as respostas corretas para cada ameaça
-$phishing = true;
-$malware = true;
-$engenharia_social = true;
-$senha_fraca = false;
-$software_desatualizado = true;
-$dispositivos_moveis_nao_protegidos = true;
 
-// Verificar se o formulário foi enviado
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  // Inicializar a pontuação do usuário
-  $pontuacao = 0;
-
-  // Verificar cada resposta selecionada pelo usuário
-  if (isset($_POST['phishing']) && $_POST['phishing'] == '1') {
-    $pontuacao++;
-  }
-  if (isset($_POST['malware']) && $_POST['malware'] == '1') {
-    $pontuacao++;
-  }
-  if (isset($_POST['engenharia-social']) && $_POST['engenharia-social'] == '1') {
-    $pontuacao++;
-  }
-  if (isset($_POST['senha-fraca']) && $_POST['senha-fraca'] == '0') {
-    $pontuacao++;
-  }
-  if (isset($_POST['software-desatualizado']) && $_POST['software-desatualizado'] == '1') {
-    $pontuacao++;
-  }
-  if (isset($_POST['dispositivos-moveis-nao-protegidos']) && $_POST['dispositivos-moveis-nao-protegidos'] == '1') {
-    $pontuacao++;
-  }
-
-  // Exibir a pontuação do usuário e a resposta correta para cada ameaça
-  echo "<p>Você acertou $pontuacao de 6 ameaças.</p>";
-  echo "<ul>";
-  echo "<li>Phishing: " . ($phishing ? "Correta" : "Incorreta") . "</li>";
-  echo "<li>Malware: " . ($malware ? "Correta" : "Incorreta") . "</li>";
-  echo "<li>Engenharia Social: " . ($engenharia_social ? "Correta" : "Incorreta") . "</li>";
-  echo "<li>Senha Fraca: " . ($senha_fraca ? "Correta" : "Incorreta") . "</li>";
-  echo "<li>Software Desatualizado: " . ($software_desatualizado ? "Correta" : "Incorreta") . "</li>";
-  echo "<li>Dispositivos Móveis não Protegidos: " . ($dispositivos_moveis_nao_protegidos ? "Correta" : "Incorreta") . "</li>";
-  echo "</ul>";
-}
-
-?>
