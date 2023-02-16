@@ -1,2 +1,28 @@
 @charset "UTF-8";
 
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #quiz {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #submit {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
