@@ -1,16 +1,53 @@
 @charset "UTF-8";
-<!-- index.html -->
+body {
+    background-color: #2ac484;
+    font-family: Arial, sans-serif;
+}
 
-<!-- ... -->
-<style>
-    body {
-        background-color: rgb(20, 40, 60);
-        color: rgb(240, 248, 255);
-        font-size: 1.3em;
-    }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    a {
-        color: rgb(255, 111, 111);
-    }
-</style>
-<!-- ... -->
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
