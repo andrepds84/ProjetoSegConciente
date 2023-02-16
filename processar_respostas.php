@@ -27,6 +27,6 @@
     echo "<p>Sua pontuação final é $pontuacao</p>";
     ?>
   </body>
-</html>.
+</html>
 
 
