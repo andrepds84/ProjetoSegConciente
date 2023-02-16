@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Jogo de seleção de segurança da informação</title>
-</head>
-<body>
-	<h1>Jogo de seleção de segurança da informação</h1>
-	<p>Teste seus conhecimentos sobre segurança da informação respondendo a estas perguntas de múltipla escolha. Selecione a resposta correta para cada pergunta.</p>
-	
-	<!-- Seção de phishing -->
-	<h2>Phishing</h2>
-	<form method="post" action="processar.php">
-		<p>Você recebe um e-mail que parece ser de seu banco solicitando que você clique em um link e faça login em sua conta. O que você deve fazer?</p>
-		<ul>
-			<li><input type="radio" name="phishing" value="1"> Clicar no link e fazer login em sua conta bancária</li>
-			<li><input type="radio" name="phishing" value="2"> Ignorar o e-mail</li>
-			<li><input type="radio" name="phishing" value="3"> Encaminhar o e-mail para um amigo</li>
-		</ul>
-		<input type="submit" value="Enviar">
-	</form>
-</body>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <head>
+			<title>QUIZ de segurança da informação</title>
+	</head>
+	<body>
+		<h1>Seleção de Perguntas CIBERSEGURANÇA</h1>
+		<p>Teste seus conhecimentos sobre segurança da informação respondendo a estas perguntas de múltipla escolha. Selecione a resposta correta para cada pergunta.</p>
+		
+		<!-- Seção de phishing -->
+		<h2>Phishing</h2>
+		<form method="post" action="processar.php">
+			<p>Você recebe um e-mail que parece ser de seu banco solicitando que você clique em um link e faça login em sua conta. O que você deve fazer?</p>
+			<ul>
+				<li><input type="radio" name="phishing" value="1"> Clicar no link e fazer login em sua conta bancária</li>
+				<li><input type="radio" name="phishing" value="2"> Ignorar o e-mail</li>
+				<li><input type="radio" name="phishing" value="3"> Encaminhar o e-mail para um amigo</li>
+			</ul>
+			<h2>Malware</h2>
+			<p>Qual é a melhor forma de proteger o computador contra malware?</p>
+			<ul>
+				<li><input type="radio" name="malware" value="1"> Usar um software antivírus confiável e manter as definições desatualizadas</li>
+				<li><input type="radio" name="malware" value="2"> Baixar software somente de fontes confiáveis</li>
+				<li><input type="radio" name="malware" value="3"> Excluir todos os arquivos de sistema do computador para evitar infecções</li>
+			</ul>
+			<h2>Engenharia Social</h2>
+			<p>Como as empresas podem se proteger contra ataques de engenharia social?</p>
+			<ul>
+				<li><input type="radio" name="engenharia_social" value="1"> Educar os funcionários sobre as ameaças de engenharia social e como identificá-las</li>
+				<li><input type="radio" name="engenharia_social" value="2"> Aumentar a segurança do firewall e do antivírus</li>
+				<li><input type="radio" name="engenharia_social" value="3"> Desativar todos os serviços de rede para impedir a entrada de ataques externos</li>
+			</ul>
+			<h2>Senhas Fracas</h2>
+			<p>Por que as senhas fracas são um problema de segurança?</p>
+			<ul>
+				<li><input type="radio" name="senha_fraca" value="1"> Elas podem ser facilmente adivinhadas ou quebradas por um hacker</li>
+				<li><input type="radio" name="senha_fraca" value="2"> Elas são difíceis de lembrar</li>
+				<li><input type="radio" name="senha_fraca" value="3"> Elas são caras para implementar e manter</li>
+			</ul>
+			<h2>Software Desatualizado</h2>
+			<p> voce baixou um software desatualizado o que pode ocorrer com seu dispositivo ?</p>
+			<ul>
+				<li><input type="radio" name="software_desatualizado" value="1"> Melhorar o desempeho e velocidade</li>
+				<li><input type="radio" name="software_desatualizado" value="2"> Posso travar no seu funcionamento atual</li>
+				<li><input type="radio" name="software_desatualizado" value="3"> Pode conter vulnerabilidades conhecidas que os hackers podem explorar para acessar seu sistema</li>
+			</ul>
+			<h2>Dispositivos Moveis nao Protegidos</h2>
+			<p> Qual é uma das melhores práticas de segurança para proteger um dispositivo móvel não protegido?</p>
+			<ul>
+				<li><input type="radio" name="dispositivos_moveis_nao_protegidos" value="1"> Instalar um aplicativo gratuito</li>
+				<li><input type="radio" name="dispositivos_moveis_nao_protegidos" value="2"> Ativar o bloqueio de tela com uma senha forte e instalar um antivirus gratis</li>
+				<li><input type="radio" name="dispositivos_moveis_nao_protegidos" value="3"> Desativar as atualizações automáticas do sistema operacional</li>
+			</ul>
+			 <input type="submit" value="Enviar">
+		</form>
+	</body>
 </html>

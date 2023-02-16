@@ -1,28 +1,16 @@
 @charset "UTF-8";
+<!-- index.html -->
 
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  #quiz {
-    margin: 20px 0;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  #submit {
-    display: block;
-    margin: 20px auto;
-  }
-  
-  #results {
-    margin-top: 20px;
-  }
-  
+<!-- ... -->
+<style>
+    body {
+        background-color: rgb(20, 40, 60);
+        color: rgb(240, 248, 255);
+        font-size: 1.3em;
+    }
+
+    a {
+        color: rgb(255, 111, 111);
+    }
+</style>
+<!-- ... -->
