@@ -1,10 +1,10 @@
 <?php
-$phishing = isset($_POST['phishing']) ? $_POST['phishing'] : '2';
-$malware = isset($_POST['malware']) ? $_POST['malware'] :'2' ;
-$engenharia_social = isset($_POST['engenharia_social']) ? $_POST['engenharia_social']: '1';
-$senha_fraca = isset($_POST['senha_fraca']) ? $_POST['senha_fraca'] : '1';
-$software_desatualizado = isset($_POST['software_desatualizado']) ?  $_POST['software_desatualizado'] : '3';
-$dispositivos_moveis_nao_protegidos = isset($_POST['dispositivos_moveis_nao_protegidos']) ? $_POST['dispositivos_moveis_nao_protegidos'] : '2' ;
+$phishing = isset($_POST['phishing']) ? $_POST['phishing'] : '' ;
+$malware = isset($_POST['malware']) ? $_POST['malware'] :'' ;
+$engenharia_social = isset($_POST['engenharia_social']) ? $_POST['engenharia_social'] : '';
+$senha_fraca = isset($_POST['senha_fraca']) ? $_POST['senha_fraca'] != null : '';
+$software_desatualizado = isset($_POST['software_desatualizado']) ?  $_POST['software_desatualizado'] : '';
+$dispositivos_moveis_nao_protegidos = isset($_POST['dispositivos_moveis_nao_protegidos']) ? $_POST['dispositivos_moveis_nao_protegidos'] : '' ;
 $score = 0;
 
 if ($phishing  == '2') {
