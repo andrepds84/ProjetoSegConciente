@@ -1,27 +1,21 @@
 @charset "UTF-8";
+
+
 body {
-    background-color: #ecf0ee;
+    background-color: #9aaaa3;
     font-family: Arial, Helvetica, sans-serif, Courier, monospace, sans-serif;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRRNv_8jZ6kUMg3SJExnmhFAkLAMUM-sJSxQ&usqp=CAU);
 }
 
 h1 {
     text-align: center;
     color: #333;
 }
+
 h2 {
     color: #333;
 }
 
-form {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-}
 
 fieldset {
     margin-bottom: 20px;

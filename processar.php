@@ -25,7 +25,7 @@ if ($engenharia_social == '1') {
     $score++;
     $engenharia_social_status = "Correta";
 } else {
-    $engenharia_social_status = "Incorreta";
+    $engenharia_social_status = "Incorreta" ;
 }
 
 if ($senha_fraca == '1') {

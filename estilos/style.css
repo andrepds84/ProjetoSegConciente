@@ -4,18 +4,15 @@ body {
     font-family: Arial, Helvetica, sans-serif, Courier, monospace, sans-serif;
 }
 
-
 h1 {
     text-align: center;
     color: #333;
 }
 
-
-form {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
+h2 {
+    color: #333;
 }
+
 
 fieldset {
     margin-bottom: 20px;
@@ -33,7 +30,7 @@ input[type="radio"] {
 
 button[type="submit"] {
     background-color: #333;
-    color: #2013d8;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
