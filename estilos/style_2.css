@@ -1,15 +1,21 @@
 @charset "UTF-8";
 body {
-    background-color: #9aaaa3;
+    background-color: #ecf0ee;
     font-family: Arial, Helvetica, sans-serif, Courier, monospace, sans-serif;
 }
-
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 h1 {
     text-align: center;
     color: #333;
 }
-
+h2 {
+    color: #333;
+}
 
 form {
     background-color: #fff;
@@ -33,7 +39,7 @@ input[type="radio"] {
 
 button[type="submit"] {
     background-color: #333;
-    color: #2013d8;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
